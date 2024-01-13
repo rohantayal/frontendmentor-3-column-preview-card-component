@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap");
+
+:root {
+    --clr-primary-bright-orange: hsl(31, 77%, 52%);
+    --clr-primary-dark-cyan: hsl(184, 100%, 22%);
+    --clr-primary-very-dark-cyan: hsl(179, 100%, 13%);
+
+    --clr-neutral-transparent-white: hsla(0, 0%, 100%, 0.75);
+    --clr-neutrak-very-light-gray: hsl(0, 0%, 95%);
+
+    font-size: 15px;
+}
+
+body {
+    background-color: var(--clr-neutrak-very-light-gray);
+    box-sizing: border-box;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+body .card-container {
+    width: 90%;
+    margin-top: 20%;
+    margin-bottom: 20%;
+   
+}
+
+#segment-sedan {
+    padding:10%;
+    background-color: var(--clr-primary-bright-orange);
+    border-radius: 5% 5% 0 0;
+    
+}
+
+#segment-suv {
+    padding:10%;
+    background-color: var(--clr-primary-dark-cyan);
+}
+
+#segment-luxury {
+    padding:10%;
+    background-color: var(--clr-primary-very-dark-cyan);
+    border-radius: 0 0 5% 5%;
+
+}
+
+h1{
+    font-family: "Big Shoulders Display", sans-serif;
+    font-weight: 800;
+    color: var(--clr-neutrak-very-light-gray);
+    font-size: 2.1rem;
+}
+
+p{
+    color: var(--clr-neutral-transparent-white);
+    font-family: "Lexend Deca",sans-serif;
+    font-size: 1.2rem;
+}
+
+button{
+    padding: 1rem 3rem;
+    border-radius: 2.5rem;
+    background-color: var(--clr-neutrak-very-light-gray);
+    border: solid 2px var(--clr-neutrak-very-light-gray);
+    font-family: "Lexend Deca",sans-serif;;
+}
+
+
+#btn-sedan {
+    color: var(--clr-primary-bright-orange);
+
+}
+
+#btn-sedan:hover{
+    background-color: var(--clr-primary-bright-orange);
+    border-color: var(--clr-neutrak-very-light-gray);
+    color: var(--clr-neutrak-very-light-gray);
+    cursor: pointer;
+}
+
+#btn-suv{
+    color:var(--clr-primary-dark-cyan);    
+}
+
+#btn-suv:hover{
+    background-color: var(--clr-primary-dark-cyan);
+    border-color: var(--clr-neutrak-very-light-gray);
+    color: var(--clr-neutrak-very-light-gray);
+    cursor: pointer;
+}
+
+#btn-lux{
+    color: var(--clr-primary-very-dark-cyan);
+}
+#btn-lux:hover{
+    background-color: var(--clr-primary-very-dark-cyan);
+    border-color: var(--clr-neutrak-very-light-gray);
+    color: var(--clr-neutrak-very-light-gray);
+    cursor: pointer;
+}
+
+@media (min-width: 1200px) {
+
+    body{
+        height: 100vh;
+    }
+    
+    body .card-container{
+        display: flex;
+        margin-top:10%;
+        margin-bottom: 0;
+        width: 60%;
+       
+
+    }
+
+    #segment-sedan {
+        border-radius: 5% 0 0 5%;
+        padding: 5%;
+    }
+
+    #segment-suv {
+        padding: 5%;
+    }
+
+    #segment-luxury {
+        border-radius: 0 5% 5% 0;
+        padding: 5%;
+    }
+
+    p{
+        margin-bottom: 40%;
+        font-size: 1rem;
+    }
+
+    button{
+        padding: 1rem 2.5rem;
+    }
+}
